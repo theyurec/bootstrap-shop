@@ -16,7 +16,8 @@
 
 		<div class="wrapper">
 			<header class="header">
-				<div class="header-top  py-1">
+														<!-- =====================HEADER TOP======================== -->
+				<div class="header-top py-1">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-6 col-sm-4">
@@ -57,13 +58,145 @@
 						</div>
 					</div>
 				</div>
-			</header>
-
-			<div class="header-middle bg-white py-2">
-				Middle
 			</div>
 
-			<main class="main">Content</main>
+													<!-- =====================HEADER BOTTOM======================== -->
+
+			<div class="header-middle bg-white py-4">
+				<div class="container-fluid">
+					<div class="row ">
+						<div class="col-sm-6 col-lg-4">
+							<a href="index.html" class="header-logo h1">E-Shop</a>
+						</div>
+
+						
+
+						<div class="col-lg-4 cart-buttons text-end order-md-2 d-none d-lg-block">
+							<a href="#" class="btn">
+								<i class="fa-solid fa-heart"></i>
+								<span class="badge text-bg-warning cart-badge bg-warning border-warning rounded-circle">3</span>
+							</a>
+
+
+							<button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+								<i class="fa-solid fa-cart-shopping"></i>
+								<span class="badge text-bg-warning cart-badge bg-warning border-warning rounded-circle">3</span>
+							</button>
+							
+							
+
+						</div>
+
+						<div class="col-lg-4 col-sm-6 order-md-1 mt-2 mt-md-2">
+							<form action="">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+									<button class="btn btn-outline-warning " type="submit" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<div>
+						Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+					</div>
+					<div class="dropdown mt-3">
+						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+							Dropdown button
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			</header>
+
+														<!-- =====================HEADER BOTTOM======================== -->
+
+			<div class="menu sticky-top">
+				<nav class="navbar navbar-expand-md navbar-dark bg-dark" data-bs-theme="dark">
+					<div class="container-fluid">
+						<!-- <a class="navbar-brand" href="#">Offcanvas dark navbar</a> -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+							<div class="offcanvas-header">
+								<h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">E-SHOP</h5>
+								<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="#">Contact</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="#">Payment</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="#">Delivery</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+											Catalog
+										</a>
+										<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end animate slideIn">
+											<li><a class="dropdown-item" href="#">Shoes</a></li>
+											<li><a class="dropdown-item" href="#">Jeans</a></li>
+											<li class="nav-item dropend">
+												<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">Sportswear</a>
+												<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end animate slideIn">
+													<li><a class="dropdown-item" href="#">Men's Sportswear</a></li>
+													<li><a class="dropdown-item" href="#">Woman's Sportswear</a></li>
+													<li><a class="dropdown-item" href="#">Baby's Sportswear</a></li>
+												</ul>
+											</li>
+											<li><a class="dropdown-item" href="#">Boo</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-block d-lg-none">
+							<a href="#" class="btn">
+								<i class="fa-solid fa-heart"></i>
+								<span class="badge text-bg-warning cart-badge bg-warning border-warning rounded-circle">3</span>
+							</a>
+	
+	
+							<button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+								<i class="fa-solid fa-cart-shopping"></i>
+								<span class="badge text-bg-warning cart-badge bg-warning border-warning rounded-circle">3</span>
+							</button>
+						</div>
+					</div>
+				</nav>
+
+
+			</div>
+
+			<main class="main">
+
+			</main>
 			<footer class="footer">Footer</footer>
 		</div>
 
